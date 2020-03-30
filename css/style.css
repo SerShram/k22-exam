@@ -1,0 +1,87 @@
+body {
+	font-family: Arial, sans-serif;
+}
+/*		Header		*/
+.header {
+	max-height: 78px;
+	background-color: #01983b;
+	margin-bottom: 36px;
+}
+.l-container {
+	max-width: 1000px;
+	padding: 0 10px 0 10px;
+	margin: 0 auto;
+}
+.menu {
+	text-transform: uppercase;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 78px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu__home {}
+.menu__about {}
+.menu__vacancies {}
+.menu__products {}
+.menu__photo {}
+.menu__news {}
+.menu__articles {}
+.menu__contacts {}
+.menu__link {
+	text-decoration: none;
+	color: #fff;
+}
+.menu__link:hover{
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	padding: 5px 0;
+}
+.menu__link:active {
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	padding: 5px 0;
+}
+/*		Блок слайдер	*/
+.main {}
+.block-slider {}
+.slider {}
+.slider__header {
+	display: flex;
+	justify-content: space-between
+}
+.slider__logo {}
+.slider__contact {}
+.social {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 5px;
+}
+.social__text {
+	text-transform: uppercase;
+	color: #01983b;
+	font-size: 12px;
+	align-self: center;
+	margin-right: 10px;
+}
+.social__link {
+	margin-right: 5px;
+	height: 21px;
+}
+.social__link:last-child {
+	margin-right: 0;
+}
+.phone {}
+.phone__link {
+	text-decoration: none;
+	color: #2c2783;
+	font-weight: bold;
+}
+.mail {}
+.mail__link {
+	text-decoration: none;
+	color: #2c2783;
+	font-weight: bold;
+}
