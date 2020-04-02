@@ -1,14 +1,14 @@
 body {
+	margin: 0;
 	font-family: Arial, sans-serif;
 }
 /*		Header		*/
 .header {
 	max-height: 78px;
 	background-color: #01983b;
-	margin-bottom: 36px;
 }
 .l-container {
-	max-width: 1000px;
+	max-width: 980px;
 	padding: 0 10px 0 10px;
 	margin: 0 auto;
 }
@@ -46,14 +46,27 @@ body {
 }
 /*		Блок слайдер	*/
 .main {}
-.block-slider {}
-.slider {}
-.slider__header {
-	display: flex;
-	justify-content: space-between
+.block-slider {
+	height: 720px;
+	background-image: url(../images/art_museum.jpg);
+	background-position-y: bottom;
 }
-.slider__logo {}
-.slider__contact {}
+.slider-container {
+	padding-top: 36px;
+	position: relative;
+}
+.slider-container__shadow{
+	position: absolute;
+	top: 125px;
+	left: -195px;
+}
+.slider-container__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+.slider-container__logo {}
+.slider-container__contact {}
 .social {
 	display: flex;
 	justify-content: flex-end;
@@ -74,14 +87,137 @@ body {
 	margin-right: 0;
 }
 .phone {}
-.phone__link {
+.mail {
+	margin-bottom: 3px;
+}
+.phone__link,.mail__link {
 	text-decoration: none;
 	color: #2c2783;
 	font-weight: bold;
 }
-.mail {}
-.mail__link {
-	text-decoration: none;
-	color: #2c2783;
+.phone__link:hover,
+.mail__link:hover{
+	text-decoration: underline;
+}
+.phone__link:active,
+.mail__link:active{
+	color: #000 ;
+}
+.search{
+	display: flex;
+}
+.search__square {
+	flex-grow: 1;
+	margin-right: 10px;
+	border: 0;
+	border-bottom: 1px solid rgba(44, 39, 131, 0.4);
+}
+.search__btn {
+	vertical-align: middle;
+	border: none;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+}
+/*		Слайдер		*/
+.slider{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.slider__items{
+	display: flex;
+	transition: transform 0.6s ease;
+}
+.slider__item{
+	height: 493px;
+	width: 100%;
+	position: relative;
+	flex: 0 0 100%;
+}
+.slider__item_inner {
+	position: absolute;
+	top: 317px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 30px 55px 8px 25px;
+}
+.slider__item_title {
+	font-family: EuropeExt;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.slider__items_description {
+	font-family: EuropeExt;
 	font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+   /* стили для кнопок "вперед" и "назад" */
+.slider__control {
+	position: absolute;
+	top: 40%;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	opacity: 0.8;
+	height: 82px;
+	background: rgba(0, 0, 0, 0.5);
+}
+.slider__control_show {
+	display: flex;
+}
+.slider__control:hover,
+.slider__control:focus {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	opacity: 0.9;
+}
+.slider__control_prev {
+	left: 0;
+}
+.slider__control_next {
+	right: 0;
+}
+.slider__control::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+}
+.slider__control_prev::before {
+background-image: url(../images/svg/shevron-left.svg);
+}
+.slider__control_next::before {
+background-image: url(../images/svg/shevron-right.svg);
+}
+/* стили для индикаторов */
+.slider__indicators {
+	list-style: none;
+	position: absolute;
+	bottom: 13px;
+	left: 0;
+	display: flex;
+	padding: 0 0 0 20px;
+	margin: 0;
+}
+.slider__indicators li {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 35px;
+	height: 14px;
+	margin-right: 3px;
+	margin-left: 3px;
+	cursor: pointer;
+	background-color: #fff;
+	background-clip: padding-box;
+}
+
+.slider__indicators li.active {
+	background-color: #01983b;
 }
