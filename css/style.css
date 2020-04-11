@@ -50,6 +50,7 @@ body {
 	height: 720px;
 	background-image: url(../images/art_museum.jpg);
 	background-position-y: bottom;
+	background-size: cover;
 }
 .slider-container {
 	padding-top: 36px;
@@ -311,6 +312,7 @@ color: #2c2783;
 	background-image: url(../images/bg-application.jpg);
 	background-position-y: -50px;
 	padding-top: 50px;
+	margin-bottom: 50px;
 }
 .application__wrapper {
 	max-width: 1225px;
@@ -328,7 +330,7 @@ color: #2c2783;
 .application__items {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 69px;
 }
 .application-item {
 	width: 610px;
@@ -411,25 +413,117 @@ color: #2c2783;
 .application-item__image{
 	margin: 0 50px;
 }
-.cotegories {}
+.cotegories {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 62px;
+}
 .cotegory {
 	position: relative;
+	width: min-content;
+}
+.cotegory:nth-child(even){
+	margin-top: 48px;
 }
 .cotegory__rhomb {
-	height: 125px;
-	width: 125px;
-	border: 10px solid #01983b;
-	border-radius: 28px;
+	height: 133px;
+	width: 133px;
+	border: 8px solid #019e41;
+	border-radius: 25px;
 	transform: rotate(45deg);
-	display: inline-block;
 	background-color: #f2f5f7;
+	box-shadow: inset -1px -1px 0px 4px rgba(0, 0, 0, 0.1);
 }
-.cotegory__image {
+.cotegory__image1 {
 	position: absolute;
 	left: 11px;
-	top: 12px;
+	top: 14px;
 }
-.cotegory__title {}
+.cotegory__image2 {
+	position: absolute;
+	left: 16px;
+	top: 18px;
+}
+.cotegory__image3 {
+	position: absolute;
+	left: 16px;
+	top: 16px;
+}
+.cotegory__image4 {
+	position: absolute;
+	left: -6px;
+	top: 19px;
+}
+.cotegory__image5 {
+	position: absolute;
+	left: 8px;
+	top: 14px;
+}
+.cotegory__image6 {
+	position: absolute;
+	left: -2px;
+	top: 41px;
+}
+.cotegory__title {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #01983b;
+	text-align: center;
+	padding-top: 27px;
+}
+/*		Block Description 	*/
+.description {}
+.wrapper-description {
+	max-width: 1212px;
+	margin: 0 auto;
+	border: 3px solid #e6ecf4;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-top: 51px;
+}
+.description__title {
+	font-family: EuropeExt,Arial,sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #01983b;
+	text-align: center;
+	margin: -9px 0 22px;
+}
+.description__table {
+	margin: 0 auto;
+	border: 3px solid #d5dfec;
+	border-collapse: collapse;
+	border-radius: 7px;
+	font-size: 14px;
+	color: #043567;
+	width: 980px;
+}
+.row--counts{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	background-color: #01983b;
+}
+.description__count{}
+.description__row:nth-child(even) {
+	background-color: #f2f5f7;
+}
+.description__col {
+	border: 1px solid #d5dfec;
+	padding: 11px 10px;
+	text-align: center;
+}
+.description__col:first-child{
+	text-align: start;
+}
+.description__shadow {
+	width: 100%;
+	height: 57px;
+	background-image: url(../images/shadow-description.png);
+	background-position-y: -18px;
+	background-repeat: no-repeat;
+}
 /*		Footer 		*/
 .footer{
 	height: 312px;
