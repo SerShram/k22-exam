@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="lightbox/fresco/dist/css/fresco.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -129,8 +130,7 @@
 				</div>
 				<div class="block-video__title">экструдированный  пенополистирол</div>
 				<div class="wrapper-iframe">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/q8KkjaW8PDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
-						Видимо Ваш браузер не поддерживает iframe, i am sorry)
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/q8KkjaW8PDc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
 					</iframe>
 				</div>
 				<div class="block-video__content">
@@ -452,19 +452,19 @@
 				</div>
 				<div class="certificate__title">сертификаты качества и премии</div>
 				<div class="certificates">
-					<a class="certificates__link" href="images/sertificates/image1.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image1.jpg">
 						<img class="certificates__img" src="images/sertificates/image1.jpg" alt="no image">
 					</a>
-					<a class="certificates__link" href="images/sertificates/image2.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image2.jpg">
 						<img class="certificates__img" src="images/sertificates/image2.jpg" alt="no image">
 					</a>
-					<a class="certificates__link" href="images/sertificates/image3.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image3.jpg">
 						<img class="certificates__img" src="images/sertificates/image3.jpg" alt="no image">
 					</a>
-					<a class="certificates__link" href="images/sertificates/image4.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image4.jpg">
 						<img class="certificates__img" src="images/sertificates/image4.jpg" alt="no image">
 					</a>
-					<a class="certificates__link" href="images/sertificates/image5.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image5.jpg">
 						<img class="certificates__img" src="images/sertificates/image5.jpg" alt="no image">
 					</a>
 				</div>
@@ -472,11 +472,40 @@
 				<img class="certificate__meed" src="images/sertificates/meed.png" alt="">
 			</div>
 		</div>
+<!--Block Contact  -->
+		<div class="block-contact">
+			<div class="contact">
+				<div class="contact__title">контакты</div>
+				<div class="contact__adress">
+					ООО &laquo;Производственно коммерческая фирма &laquo;Элит Пласт&raquo;<br> 
+					73000, Украина, г.Херсон, ул Советская, 41-А
+				</div>
+				<div class="contact__tel">
+					<a class="contact__link" href="tel:+380552314410">тел:+38(0552)123-456, </a>
+					<a class="contact__link" href="tel:+380552314403">789-403; </a>
+					<a class="contact__link" href="tel:+380552359214">факс:+38(0552)123-214</a>
+				</div>
+				<a class="contact__link" href="mailto:info@penoboard.com">e-mail:info@penoboard.com</a>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2739.575133162833!2d32.601440232467745!3d46.63515518029204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDM4JzA0LjYiTiAzMsKwMzYnMTAuNiJF!5e0!3m2!1sru!2sua!4v1587045787753!5m2!1sru!2sua" width="100%" height="330" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
 	</main>
 <!--Footer-->
 	<footer class="footer">
-		
+		<div class="footer__brand">
+			<a class="footer__logo" href="#"><img src="images/logo-footer.png" alt=""></a>
+			<div class="footer__novaboard">novaboard</div>
+			<div class="footer__data">2015 &copy;</div>
+		</div>
+		<div class="footer__socials">
+			<div class="footer__socials-text">мы в социальных сетях</div>
+			<a class="footer__link" href="#"><img src="images/insta-white.png" alt=""></a>
+			<a class="footer__link" href="#"><img src="images/vk-white.png" alt=""></a>
+		</div>
+			<a class="footer__publicity-link" href="https://wezom.com.ua/" target="blank">Разработка сайта — студия WEZOM </a>
 	</footer>
+	<script src="js/jquery3.5.0.js"></script>
 	<script src="js/slider.js"></script>
+	<script src="lightbox/fresco/dist/js/fresco.min.js"></script>
 </body>
 </html>

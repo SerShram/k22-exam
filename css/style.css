@@ -5,7 +5,7 @@ body {
 /*		Header		*/
 .header {
 	max-height: 78px;
-	background-color: #01983b;
+	background: url(../images/uzor.jpg) 0 0 repeat;
 }
 .l-container {
 	max-width: 980px;
@@ -263,6 +263,9 @@ background-image: url(../images/svg/shevron-right.svg);
 	position: relative;
 	margin-bottom: 55px;
 }
+iframe {
+	border: none;
+}
 .wrapper-iframe::after{
 	content: url(../images/shadow-iframe.png);
 	position: absolute;
@@ -287,7 +290,7 @@ background-image: url(../images/svg/shevron-right.svg);
 	font-weight: bold;
 	color: #fff;
 	text-transform: uppercase;
-	background: linear-gradient(to bottom,#01b84d,#017527);
+	background: url(../images/uzor.jpg) 0 0 repeat;
 	border: none;
 	border-radius: 4px;
 	display: block;
@@ -618,10 +621,10 @@ color: #2c2783;
 }
 /*		Block-certificates 	*/
 .certificate {
-	margin-bottom: 46px;
+	margin-bottom: 48px;
 }
 .wrapper-certificate {
-	max-width: 876px;
+	max-width: 916px;
 	margin: 0 auto; 
 }
 .certificate__title {
@@ -635,25 +638,115 @@ color: #2c2783;
 }
 .certificates {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-bottom: 21px;
 }
-.certificates__link {}
-.certificates__img {}
+.certificates__img {
+	border: 2px solid #fff;
+}
+.certificates__img:hover {
+	box-shadow: 0px 3px 10px 0px #585858;
+}
 .certificate__text {
 	font-weight: bold;
 	font-size: 24px;
 	color: #2c2783;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 3px;
+	margin-bottom: 9px;
+	line-height: 24px;
 }
 .certificate__meed {
 	display: block;
 	margin: 0 auto;
 }
+/*		Block Contact 		*/
+.block-contact {
+	position: relative;
+	padding-top: 160px;
+}
+.contact {
+	width: 1221px;
+	padding: 32px 0 30px;
+	text-align: center;
+	color: #fff;
+	background: url(../images/uzor.jpg) 0 0 repeat;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	box-shadow: 0px 3px 9px -1px #000;
+	position: absolute;
+	top: -4px;
+	right: 17.8%;
+}
+.contact__title {
+	font-family: EuropeExt,Arial,sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 9px;
+}
+.contact__adress {
+	font-size: 18px;
+	margin-bottom: 11px;
+}
+.contact__tel {
+	margin-bottom: 8px;
+}
+.contact__link {
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}
+.contact__link:hover{
+	text-shadow: 0px 2px 3px #000;
+}
 /*		Footer 		*/
 .footer{
-	height: 312px;
-	background-color: #01983b;
+	background: url(../images/bg-footer.jpg) 0 0 no-repeat;
+	text-align: center;
+	padding: 27px 0;
+	color: #fff;
+	font-weight: bold;
+}
+.footer__brand {
+	margin-bottom: 7px;
+}
+.footer__logo{
+	display: block;
+	margin-bottom: -4px;
+}
+.footer__logo img:hover {
+	box-shadow: 0px 0px 6px 2px #646363;
+}
+.footer__novaboard {
+	font-family: EuropeExt,Arial,sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: -5px;
+}
+.footer__data {
+	font-size: 12px;
+
+}
+.footer__socials {
+	margin-bottom: 94px;
+}
+.footer__socials-text {
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+.footer__link {}
+.footer__link img:hover {
+	background-color: #646363;
+	border-radius: 50%;
+	box-shadow: 0px 0px 6px 1px #646363;;
+}
+.footer__publicity-link {
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+.footer__publicity-link:hover {
+	text-shadow: 2px 4px 5px #222121;
 }
