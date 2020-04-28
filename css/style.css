@@ -34,15 +34,15 @@ body {
 	text-decoration: none;
 	color: #fff;
 }
+.menu__link.is-active,
 .menu__link:hover{
 	border-top: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	padding: 5px 0;
 }
 .menu__link:active {
-	border-top: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-	padding: 5px 0;
+	border-top: 2px solid #2c2783;
+	border-bottom: 2px solid #2c2783;
 }
 /*		Блок слайдер	*/
 .main {}
@@ -182,6 +182,7 @@ body {
 .slider__control::before {
 	content: '';
 	display: inline-block;
+	vertical-align: top;
 	width: 20px;
 	height: 20px;
 	background: transparent no-repeat center center;
@@ -207,7 +208,7 @@ background-image: url(../images/svg/shevron-right.svg);
 	flex: 0 1 auto;
 	width: 34px;
 	height: 13px;
-	margin-right: 0px;
+	margin-right: 0;
 	margin-left: 3px;
 	cursor: pointer;
 	background-color: #fff;
@@ -279,7 +280,7 @@ iframe {
 	margin-bottom: 61px;
 	color: #0a274d;
 }
-.block-video__item {
+.block-video__content p {
 	margin-bottom: 20px;
 }
 .block-video__btn {
@@ -296,18 +297,18 @@ iframe {
 	display: block;
 	margin: 0 auto 14px;
 	padding: 0;
-	box-shadow: 0px 2px 10px 0px #000;
+	box-shadow: 0 2px 10px 0 #000;
 }
 .block-video__btn:hover{
 	transform: rotateX(30deg);
 	transition: 0.3s;
 	cursor: pointer;
-	box-shadow: 0px 5px 17px 2px #000;
+	box-shadow: 0 5px 17px 2px #000;
 }
 .block-video__btn:active{
 transition: 0.3s;
 cursor: pointer;
-box-shadow: inset 0px 0px 15px 3px #054818;
+box-shadow: inset 0 0 15px 3px #054818;
 color: #2c2783;
 }
 /*		Block Application 		*/
@@ -411,7 +412,7 @@ color: #2c2783;
 	background-color: rgba(255, 255, 255, 0.2);
 	padding: 4px 0;
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 	display: flex;
 	width: 100%;
 	justify-content: flex-end;
@@ -422,58 +423,58 @@ color: #2c2783;
 .application-item__image{
 	margin: 0 50px;
 }
-.cotegories {
+.categories {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 62px;
 }
-.cotegory {
+.category {
 	position: relative;
 	width: min-content;
 }
-.cotegory:nth-child(even){
+.category:nth-child(even){
 	margin-top: 48px;
 }
-.cotegory__rhomb {
+.category__rhomb {
 	height: 133px;
 	width: 133px;
 	border: 8px solid #019e41;
 	border-radius: 25px;
 	transform: rotate(45deg);
 	background-color: #f2f5f7;
-	box-shadow: inset -1px -1px 0px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: inset -1px -1px 0 4px rgba(0, 0, 0, 0.1);
 }
-.cotegory__image1 {
+.category__image1 {
 	position: absolute;
 	left: 11px;
 	top: 14px;
 }
-.cotegory__image2 {
+.category__image2 {
 	position: absolute;
 	left: 16px;
 	top: 18px;
 }
-.cotegory__image3 {
+.category__image3 {
 	position: absolute;
 	left: 16px;
 	top: 16px;
 }
-.cotegory__image4 {
+.category__image4 {
 	position: absolute;
 	left: -6px;
 	top: 19px;
 }
-.cotegory__image5 {
+.category__image5 {
 	position: absolute;
 	left: 8px;
 	top: 14px;
 }
-.cotegory__image6 {
+.category__image6 {
 	position: absolute;
 	left: -2px;
 	top: 41px;
 }
-.cotegory__title {
+.category__title {
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #01983b;
@@ -657,7 +658,7 @@ color: #2c2783;
 	border: 2px solid #fff;
 }
 .certificates__img:hover {
-	box-shadow: 0px 3px 10px 0px #585858;
+	box-shadow: 0 3px 10px 0 #585858;
 }
 .certificate__text {
 	font-weight: bold;
@@ -677,6 +678,9 @@ color: #2c2783;
 	position: relative;
 	padding-top: 160px;
 }
+.block-contact iframe{
+	display: block;
+}
 .block-contact__wrapper{
 	position: relative;
 	max-width: 1224px;
@@ -690,7 +694,7 @@ color: #2c2783;
 	background: url(../images/uzor.jpg) 0 0 repeat;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	box-shadow: 0px 3px 9px -1px #000;
+	box-shadow: 0 3px 9px -1px #000;
 	position: absolute;
 	top: -163px;
 }
@@ -714,7 +718,7 @@ color: #2c2783;
 	text-decoration: none;
 }
 .contact__link:hover{
-	text-shadow: 0px 2px 3px #000;
+	text-shadow: 0 2px 3px #000;
 }
 /*		Footer 		*/
 .footer{
@@ -732,7 +736,7 @@ color: #2c2783;
 	margin-bottom: -4px;
 }
 .footer__logo img:hover {
-	box-shadow: 0px 0px 6px 2px #646363;
+	box-shadow: 0 0 6px 2px #646363;
 }
 .footer__novaboard {
 	font-family: EuropeExt,Arial,sans-serif;
@@ -755,7 +759,7 @@ color: #2c2783;
 .footer__link img:hover {
 	background-color: #646363;
 	border-radius: 50%;
-	box-shadow: 0px 0px 6px 1px #646363;;
+	box-shadow: 0 0 6px 1px #646363;;
 }
 .footer__publicity-link {
 	font-size: 12px;

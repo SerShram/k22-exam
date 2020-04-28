@@ -2,9 +2,6 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="lightbox/fresco/dist/css/fresco.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -13,6 +10,9 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<title>NovaBoard</title>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="lightbox/fresco/dist/css/fresco.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <!--Header                      -->
@@ -20,7 +20,7 @@
 		<nav class="l-container">
 				<ul class="menu">
 					<li class="menu__home">
-						<a class="menu__link" href="#">главная</a>
+						<a class="menu__link is-active" href="#">главная</a>
 					</li>
 					<li class="menu__about">
 						<a class="menu__link" href="#">о компании</a>
@@ -59,10 +59,10 @@
 						<div class="slider-container__contact">
 							<div class="social">
 								<span class="social__text">мы в социальных сетях</span>
-								<a class="social__link" href="">
+								<a class="social__link" target="blank" href="#">
 									<img src="images/insta.png" alt="">
 								</a>
-								<a class="social__link" href="">
+								<a class="social__link" target="blank" href="#">
 									<img src="images/vk.png" alt="">
 								</a>
 							</div>
@@ -134,12 +134,12 @@
 					</iframe>
 				</div>
 				<div class="block-video__content">
-					<p class="block-video__item">
+					<p>
 						Многолетний опыт применения экструдированного пенополистирола в различных отраслях строительства 
 						доказывает высокую эффективность его использования. Наша компания производит экструдированный 
 						пенополистирол на высококачественном европейском оборудовании, соблюдая мировые стандарты качества. 
 					</p>
-					<p class="block-video__item">
+					<p>
 						Торговая марка <b>NOVABOARD</b> много лет на украинском рынке и за это время мы не только вышли на 
 						лидирующие позиции, но и доказали, что NOVABOARD– это гарантия качества, проверенная временем. 
 						Наш бренд - это наша репутация. 
@@ -180,36 +180,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="cotegories">
-					<div class="cotegory">
-						<div class="cotegory__rhomb"></div>
-						<img src="images/cotegories/balkoni-i-lodgyi.png" alt="" class="cotegory__image1">
-						<h3 class="cotegory__title">балконы и лоджии</h3>
+				<div class="categories">
+					<div class="category">
+						<div class="category__rhomb"></div>
+						<img src="images/categories/image1.png" alt="" class="category__image1">
+						<h3 class="category__title">балконы и лоджии</h3>
 					</div>
-					<div class="cotegory">
-						<div class="cotegory__rhomb"></div>
-						<img src="images/cotegories/steny-fasad.png" alt="" class="cotegory__image2">
-						<h3 class="cotegory__title">стены и<br> фасады</h3>
+					<div class="category">
+						<div class="category__rhomb"></div>
+						<img src="images/categories/image2.png" alt="" class="category__image2">
+						<h3 class="category__title">стены и<br> фасады</h3>
 					</div>
-					<div class="cotegory">
-						<div class="cotegory__rhomb"></div>
-						<img src="images/cotegories/perimetr-doma.png" alt="" class="cotegory__image3">
-						<h3 class="cotegory__title">периметр дома и цоколь</h3>
+					<div class="category">
+						<div class="category__rhomb"></div>
+						<img src="images/categories/image3.png" alt="" class="category__image3">
+						<h3 class="category__title">периметр дома и цоколь</h3>
 					</div>
-					<div class="cotegory">
-						<div class="cotegory__rhomb"></div>
-						<img src="images/cotegories/krovlya.png" alt="" class="cotegory__image4">
-						<h3 class="cotegory__title">плоская и скатная кровля</h3>
+					<div class="category">
+						<div class="category__rhomb"></div>
+						<img src="images/categories/image4.png" alt="" class="category__image4">
+						<h3 class="category__title">плоская и скатная кровля</h3>
 					</div>
-					<div class="cotegory">
-						<div class="cotegory__rhomb"></div>
-						<img src="images/cotegories/fundament.png" alt="" class="cotegory__image5">
-						<h3 class="cotegory__title">фундамент и мостики холода</h3>
+					<div class="category">
+						<div class="category__rhomb"></div>
+						<img src="images/categories/image5.png" alt="" class="category__image5">
+						<h3 class="category__title">фундамент и мостики холода</h3>
 					</div>
-					<div class="cotegory">
-						<div class="cotegory__rhomb"></div>
-						<img src="images/cotegories/poly.png" alt="" class="cotegory__image6">
-						<h3 class="cotegory__title">полы и<br> потолки</h3>
+					<div class="category">
+						<div class="category__rhomb"></div>
+						<img src="images/categories/image6.png" alt="" class="category__image6">
+						<h3 class="category__title">полы и<br> потолки</h3>
 					</div>
 				</div>
 			</div>
@@ -443,7 +443,7 @@
 				</div>
 			</div>
 		</div>
-<!--Block-certificates-->
+<!--Block-Certificates-->
 		<div class="certificate">
 			<div class="wrapper-certificate">
 				<div class="brand">
@@ -452,19 +452,19 @@
 				</div>
 				<div class="certificate__title">сертификаты качества и премии</div>
 				<div class="certificates">
-					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image1.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image1-1.jpg">
 						<img class="certificates__img" src="images/sertificates/image1.jpg" alt="no image">
 					</a>
-					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image2.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image2-1.jpg">
 						<img class="certificates__img" src="images/sertificates/image2.jpg" alt="no image">
 					</a>
-					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image3.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image3-1.jpg">
 						<img class="certificates__img" src="images/sertificates/image3.jpg" alt="no image">
 					</a>
-					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image4.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image4-1.jpg">
 						<img class="certificates__img" src="images/sertificates/image4.jpg" alt="no image">
 					</a>
-					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image5.jpg">
+					<a class="fresco" data-fresco-group="certif-group" href="images/sertificates/image5-1.jpg">
 						<img class="certificates__img" src="images/sertificates/image5.jpg" alt="no image">
 					</a>
 				</div>
@@ -489,7 +489,7 @@
 					<a class="contact__link" href="mailto:info@penoboard.com">e-mail:info@penoboard.com</a>
 				</div>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2739.575133162833!2d32.601440232467745!3d46.63515518029204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDM4JzA0LjYiTiAzMsKwMzYnMTAuNiJF!5e0!3m2!1sru!2sua!4v1587045787753!5m2!1sru!2sua" width="100%" height="330" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2739.575133162833!2d32.601440232467745!3d46.63515518029204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDM4JzA0LjYiTiAzMsKwMzYnMTAuNiJF!5e0!3m2!1sru!2sua!4v1587045787753!5m2!1sru!2sua" width="100%" height="337" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</main>
 <!--Footer-->
@@ -501,8 +501,8 @@
 		</div>
 		<div class="footer__socials">
 			<div class="footer__socials-text">мы в социальных сетях</div>
-			<a class="footer__link" href="#"><img src="images/insta-white.png" alt=""></a>
-			<a class="footer__link" href="#"><img src="images/vk-white.png" alt=""></a>
+			<a class="footer__link" target="blank" href="#"><img src="images/insta-white.png" alt=""></a>
+			<a class="footer__link" target="blank" href="#"><img src="images/vk-white.png" alt=""></a>
 		</div>
 			<a class="footer__publicity-link" href="https://wezom.com.ua/" target="blank">Разработка сайта — студия WEZOM </a>
 	</footer>
